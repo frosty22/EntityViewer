@@ -1,0 +1,27 @@
+{
+	"name": "frosty22/entity-viewer",
+	"type": "library",
+	"description": "Display detail of entity based on annotations.",
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+	{
+		"name": "Vít Ledvinka",
+		"homepage": "http://www.frosty22.cz"
+	}
+],
+	"require": {
+	"php": ">= 5.2.0",
+		"nette/nette": "2.*",
+		"kdyby/doctrine": "*",
+		"frosty22/ale": "*",
+		"frosty22/entity-meta-reader": "*"
+},
+	"autoload": {
+	"psr-0": {
+		"EntityViewer" : "src/"
+	},
+	"classmap": [
+		"src/EntityViewer/exceptions.php"
+	]
+}
+}
