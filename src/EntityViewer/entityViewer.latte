@@ -1,1 +1,8 @@
-Foo
+<table class="table">
+	{foreach $values as $value}
+	<tr>
+		<th>{$value->name}</th>
+		<td>{$value->value}</td>
+	</tr>
+	{/foreach}
+</table>
